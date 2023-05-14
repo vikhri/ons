@@ -226,7 +226,13 @@
   display: grid;
   grid-template-columns: 43% 57%;
   height: 100%;
+}
 
+@media (max-width: 768px) {
+  .promo__content {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
 }
 
 .promo__blur-section {
@@ -247,7 +253,12 @@
   mask-image: url("img/svg-mask.svg");
   mask-size: cover;
   mask-position: right;
+}
 
+@media (max-width: 480px){
+  .promo__blur-section {
+    padding-bottom: 10vw;
+  }
 }
 
 .promo__slogan {
@@ -258,12 +269,24 @@
 }
 
 @media (max-width: 1024px) {
-
   .promo__slogan {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 
+@media (max-width: 488px) {
+  .promo__slogan {
+    font-size: 24px;
+  }
+
+  .promo__link-text {
+    font-size: 16px;
+  }
+
+  .promo__link-icon {
+    width: 30px;
+  }
+}
 
 .promo__links-section {
   display: flex;
@@ -296,6 +319,13 @@
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+}
+
+@media (max-width: 488px) {
+  .promo__app-links {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 .promo__socials {
@@ -334,7 +364,7 @@
 }
 
 
-.top-header__button {
+.top-header__menu-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -343,11 +373,11 @@
   cursor: pointer;
   width: 26px;
   height: 26px;
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
 @media (min-width: 1024px) {
-  .top-header__button {
+  .top-header__menu-button {
     display: none;
   }
 }
