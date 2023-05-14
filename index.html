@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles.css" media="screen">
@@ -37,20 +38,35 @@
       <li class="menu__item">
         <a class="menu__link" href="/about/vacancies.php">Вакансии</a>
       </li>
+      <li class="menu__item">
+        <a class="menu__link menu__link--search" href="/search/">
+          <svg class="top-header-search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.4204 11.8296L10.5646 8.97381C11.1546 8.0845 11.5 7.01969 11.5 5.875C11.5 2.77338 8.97663 0.25 5.875 0.25C2.77338 0.25 0.25 2.77338 0.25 5.875C0.25 8.97663 2.77338 11.5 5.875 11.5C7.01969 11.5 8.0845 11.1546 8.97381 10.5646L11.8296 13.4204C12.2684 13.8597 12.9816 13.8597 13.4204 13.4204C13.8597 12.9811 13.8597 12.2689 13.4204 11.8296ZM1.9375 5.875C1.9375 3.70375 3.70375 1.9375 5.875 1.9375C8.04625 1.9375 9.8125 3.70375 9.8125 5.875C9.8125 8.04625 8.04625 9.8125 5.875 9.8125C3.70375 9.8125 1.9375 8.04625 1.9375 5.875Z"
+                fill="#0AA373"/>
+          </svg>
+          Поиск</a>
+      </li>
     </ul>
     <form class="nav__search nav-search" action="" method="get">
+      <input class="top-header-search__input visually-hidden" name="search" id="search">
       <button class="top-header-search__button">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="top-header-search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
               d="M13.4204 11.8296L10.5646 8.97381C11.1546 8.0845 11.5 7.01969 11.5 5.875C11.5 2.77338 8.97663 0.25 5.875 0.25C2.77338 0.25 0.25 2.77338 0.25 5.875C0.25 8.97663 2.77338 11.5 5.875 11.5C7.01969 11.5 8.0845 11.1546 8.97381 10.5646L11.8296 13.4204C12.2684 13.8597 12.9816 13.8597 13.4204 13.4204C13.8597 12.9811 13.8597 12.2689 13.4204 11.8296ZM1.9375 5.875C1.9375 3.70375 3.70375 1.9375 5.875 1.9375C8.04625 1.9375 9.8125 3.70375 9.8125 5.875C9.8125 8.04625 8.04625 9.8125 5.875 9.8125C3.70375 9.8125 1.9375 8.04625 1.9375 5.875Z"
               fill="#0AA373"/>
         </svg>
       </button>
-      <input class="top-header-search__input visually-hidden" name="search" id="search">
       <label class="top-header-search__label" aria-label="Поиск" for="search">Поиск</label>
     </form>
   </nav>
-  <button class="top-header__login" type="button">Личный кабинет</button>
+  <button class="top-header__login" type="button">
+    <span class="top-header__login-label">Личный кабинет</span>
+  </button>
+
+  <button class="top-header__button" type="button">
+    <span class="top-header__toggle"></span>
+  </button>
 </header>
 <main class="page__main">
   <section class="promo">
