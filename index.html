@@ -13,7 +13,7 @@
     <a class="nav__link" href="/">
       <img class="nav__logo" src="/img/tatneft-logo.png" alt="Логотип" width="166" height="47">
     </a>
-    <ul class="nav__menu menu">
+    <ul class="nav__menu menu is-closed">
       <li class="menu__item">
         <a class="menu__link" href="/about/bonus-system/">Бонусная программа</a>
       </li>
@@ -38,9 +38,10 @@
       <li class="menu__item">
         <a class="menu__link" href="/about/vacancies.php">Вакансии</a>
       </li>
-      <li class="menu__item">
+      <li class="menu__item menu__item--search">
         <a class="menu__link menu__link--search" href="/search/">
-          <svg class="top-header-search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="top-header-search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M13.4204 11.8296L10.5646 8.97381C11.1546 8.0845 11.5 7.01969 11.5 5.875C11.5 2.77338 8.97663 0.25 5.875 0.25C2.77338 0.25 0.25 2.77338 0.25 5.875C0.25 8.97663 2.77338 11.5 5.875 11.5C7.01969 11.5 8.0845 11.1546 8.97381 10.5646L11.8296 13.4204C12.2684 13.8597 12.9816 13.8597 13.4204 13.4204C13.8597 12.9811 13.8597 12.2689 13.4204 11.8296ZM1.9375 5.875C1.9375 3.70375 3.70375 1.9375 5.875 1.9375C8.04625 1.9375 9.8125 3.70375 9.8125 5.875C9.8125 8.04625 8.04625 9.8125 5.875 9.8125C3.70375 9.8125 1.9375 8.04625 1.9375 5.875Z"
                 fill="#0AA373"/>
@@ -48,25 +49,71 @@
           Поиск</a>
       </li>
     </ul>
-    <form class="nav__search nav-search" action="" method="get">
-      <input class="top-header-search__input visually-hidden" name="search" id="search">
-      <button class="top-header-search__button">
-        <svg class="top-header-search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="nav__search-button" type="button">
+      <svg class="top-header-search__icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M13.4204 11.8296L10.5646 8.97381C11.1546 8.0845 11.5 7.01969 11.5 5.875C11.5 2.77338 8.97663 0.25 5.875 0.25C2.77338 0.25 0.25 2.77338 0.25 5.875C0.25 8.97663 2.77338 11.5 5.875 11.5C7.01969 11.5 8.0845 11.1546 8.97381 10.5646L11.8296 13.4204C12.2684 13.8597 12.9816 13.8597 13.4204 13.4204C13.8597 12.9811 13.8597 12.2689 13.4204 11.8296ZM1.9375 5.875C1.9375 3.70375 3.70375 1.9375 5.875 1.9375C8.04625 1.9375 9.8125 3.70375 9.8125 5.875C9.8125 8.04625 8.04625 9.8125 5.875 9.8125C3.70375 9.8125 1.9375 8.04625 1.9375 5.875Z"
+            fill="#0AA373"/>
+      </svg>
+      Поиск
+    </button>
+    <form class="nav__search nav-search visually-hidden" action="" method="get">
+      <label class="nav-search__label visually-hidden" aria-label="Поиск" for="search">Поиск</label>
+      <input class="nav-search__input" name="search" id="search">
+      <button class="nav-search__button nav-search__button--submit">
+        <svg class="nav-search__icon" width="16" height="16" viewBox="0 0 14 14" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
           <path
               d="M13.4204 11.8296L10.5646 8.97381C11.1546 8.0845 11.5 7.01969 11.5 5.875C11.5 2.77338 8.97663 0.25 5.875 0.25C2.77338 0.25 0.25 2.77338 0.25 5.875C0.25 8.97663 2.77338 11.5 5.875 11.5C7.01969 11.5 8.0845 11.1546 8.97381 10.5646L11.8296 13.4204C12.2684 13.8597 12.9816 13.8597 13.4204 13.4204C13.8597 12.9811 13.8597 12.2689 13.4204 11.8296ZM1.9375 5.875C1.9375 3.70375 3.70375 1.9375 5.875 1.9375C8.04625 1.9375 9.8125 3.70375 9.8125 5.875C9.8125 8.04625 8.04625 9.8125 5.875 9.8125C3.70375 9.8125 1.9375 8.04625 1.9375 5.875Z"
               fill="#0AA373"/>
         </svg>
       </button>
-      <label class="top-header-search__label" aria-label="Поиск" for="search">Поиск</label>
+      <button class="nav-search__button nav-search__button--close">
+        <svg class="nav-search__icon" style="width: 20px; height: 20px; vertical-align: middle; overflow: hidden;"
+             viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z"
+              fill="#0AA373"/>
+        </svg>
+      </button>
     </form>
   </nav>
   <button class="top-header__login" type="button">
     <span class="top-header__login-label">Личный кабинет</span>
   </button>
-
-  <button class="top-header__menu-button" type="button">
+  <button class="top-header__menu-toggle-button" type="button">
     <span class="top-header__toggle"></span>
   </button>
+  <div class="popup-wrapper visually-hidden">
+    <div class="auth-popup">
+      <div class="auth-popup__exit-button">
+        <svg class="auth-popup--exit-icon" style="width: 20px; height: 20px; vertical-align: middle; overflow: hidden;"
+             viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z"
+              fill="#0AA373"/>
+        </svg>
+      </div>
+      <form class="auth-form" action="" method="post" id="form_authorize_popup_block" novalidate="novalidate">
+        <div class="auth-form__field"><label for="login" aria-label="Логин"><input class="auth-form__input" type="text"
+                                                                                   placeholder="Введите логин"
+                                                                                   id="login"
+                                                                                   name="legal_login"></label></div>
+        <div class="auth-form__field"><label for="password" aria-label="Пароль"><input class="auth-form__input"
+                                                                                       type="password"
+                                                                                       placeholder="Введите пароль"
+                                                                                       id="password"
+                                                                                       name="legal_password"></label>
+        </div>
+        <div class="post_result"></div>
+        <div class="auth-form__field">
+          <button class="auth-form__submit btn btn-primary" type="submit">Вход</button>
+        </div>
+      </form>
+    </div>
+    <div class="overlay"></div>
+  </div>
 </header>
 <main class="page__main">
   <section class="promo">
@@ -109,7 +156,7 @@
     </div>
   </section>
 </main>
-
-
+<script type="module" src="index.js"></script>
+<script type="text/javascript" src="js/AuthPopup.js"></script>
 </body>
 </html>
