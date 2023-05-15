@@ -150,7 +150,12 @@
   align-items: center;
   column-gap: 5px;
   width: 100%;
+}
 
+@media (max-width: 768px){
+  .nav-search {
+    display: none;
+  }
 }
 
 .nav-search__input {
@@ -259,7 +264,7 @@
   cursor: pointer;
   width: 26px;
   height: 26px;
-  margin-left: 18px;
+  margin: 0 18px;
 }
 
 @media (min-width: 1024px) {
