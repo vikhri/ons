@@ -38,4 +38,6 @@ const ModalOpener = () => {
   })
 };
 
-export default ModalOpener;
+ModalOpener();
+
+

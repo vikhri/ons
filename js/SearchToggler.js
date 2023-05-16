@@ -35,4 +35,4 @@ const SearchToggler = () => {
 
 };
 
-export default SearchToggler;
+  SearchToggler();

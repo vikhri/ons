@@ -20,4 +20,4 @@ const HeaderToggler = () => {
   })
 };
 
-export default HeaderToggler;
+HeaderToggler();
