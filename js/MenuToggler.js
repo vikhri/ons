@@ -14,11 +14,7 @@ const button = document.querySelector(selectors.toggleButton);
 const HeaderToggler = () => {
 
   button.addEventListener('click', () => {
-
-    console.log('click')
-
     const isClosed = menu.classList.contains(states.close);
-
     menu.classList.toggle(states.close, !isClosed);
 
   })

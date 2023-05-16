@@ -7,7 +7,7 @@ const selectors = {
 }
 
 const states = {
-  hidden: 'visually-hidden'
+  hidden: 'visually-hidden',
 }
 
 const form = document.querySelector(selectors.form);
@@ -24,7 +24,7 @@ const SearchToggler = () => {
     openButton.classList.add(states.hidden);
   })
 
-  closeButton.addEventListener(click, (evt) => {
+  closeButton.addEventListener('click', (evt) => {
 
     evt.preventDefault();
 
