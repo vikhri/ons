@@ -19,7 +19,6 @@ const ModalOpener = () => {
 
   // Open modal window
   loginButton.addEventListener('click', () => {
-    console.log('click');
     popup.classList.remove(states.hidden)
   })
 
