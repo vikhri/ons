@@ -159,6 +159,7 @@ input {
   display: flex;
   column-gap: 7px;
   padding-left: 20px;
+  padding-right: 5px;
 
   background-color: transparent;
   border: none;
@@ -179,6 +180,13 @@ input {
 @media (max-width: 768px) {
   .nav__search-button {
     display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .nav__search-button {
+    flex-grow: 1;
+    justify-content: flex-end;
   }
 }
 
@@ -255,6 +263,18 @@ input {
   opacity: 1;
 }
 
+@media(min-width: 1350px) {
+  .menu {
+    min-width: fit-content;
+  }
+}
+
+@media (max-width: 1350px) {
+  .menu {
+    flex-grow: 2;
+  }
+}
+
 @media (min-width: 1024px) {
   .menu {
     position: inherit;
@@ -264,7 +284,6 @@ input {
     column-gap: 30px;
     row-gap: 10px;
     flex-wrap: wrap;
-    flex-grow: 1;
 
     padding: 0;
 
