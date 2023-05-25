@@ -448,6 +448,13 @@ input {
   }
 }
 
+@media (min-width: 260px) and (max-width: 768px) {
+  .promo__blur-section {
+    height: 35vh;
+  }
+}
+
+
 .promo__slogan {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
