@@ -406,11 +406,11 @@ input {
 
 .promo__content {
   display: grid;
-  grid-template-columns: 43% 57%;
+  grid-template-columns: 33% 67%;
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .promo__content {
     grid-template-columns: 1fr;
   }
@@ -423,17 +423,17 @@ input {
   align-items: flex-start;
   row-gap: 33px;
 
-  padding: 5vw 2vw 5vw 11.5vw;
+  padding: 30px 2vw 5vw 5vw;
   color: white;
 
   background-color: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(22px);
-  -webkit-mask-image: url("img/svg-mask.svg");
-  -webkit-mask-size: cover;
-  -webkit-mask-position: right;
-  mask-image: url("img/svg-mask.svg");
-  mask-size: cover;
-  mask-position: right;
+  /*-webkit-mask-image: url("img/svg-mask.svg");*/
+  /*-webkit-mask-size: cover;*/
+  /*-webkit-mask-position: right;*/
+  /*mask-image: url("img/svg-mask.svg");*/
+  /*mask-size: cover;*/
+  /*mask-position: right;*/
 }
 
 @media (max-width: 480px) {
@@ -449,15 +449,21 @@ input {
   line-height: 1.35;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1540px) {
   .promo__slogan {
     font-size: 30px;
   }
 }
 
-@media (max-width: 488px) {
+@media (max-width: 1200px) {
   .promo__slogan {
-    font-size: 24px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .promo__slogan {
+    font-size: 30px;
   }
 
   .promo__link-text {
