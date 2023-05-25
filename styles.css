@@ -234,7 +234,6 @@ input {
   position: absolute;
   top: 98px;
   right: 0;
-  width: 40vw;
   min-width: 230px;
   height: 100%;
   z-index: 2;
