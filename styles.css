@@ -410,6 +410,12 @@ input {
   height: 100%;
 }
 
+@media (min-width: 1440px) {
+  .promo__content {
+    grid-template-columns: 550px auto;
+  }
+}
+
 @media (max-width: 1024px) {
   .promo__content {
     grid-template-columns: 1fr;
