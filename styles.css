@@ -263,11 +263,6 @@ input {
   opacity: 1;
 }
 
-@media(min-width: 1350px) {
-  .menu {
-    min-width: fit-content;
-  }
-}
 
 @media (max-width: 1350px) {
   .menu {
@@ -397,7 +392,7 @@ input {
   }
 
   .top-header__login {
-    min-width: 115px;
+    min-width: fit-content;
   }
 }
 
