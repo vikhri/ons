@@ -4,7 +4,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/OpenSans_Condensed-Regular.woff") format("woff");
+  src: url("fonts/OpenSans-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  src: url("fonts/OpenSans_Condensed-SemiBold.woff") format("woff");
+  src: url("fonts/OpenSans-SemiBold.woff") format("woff");
   font-display: swap;
 }
 
@@ -20,7 +20,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/OpenSans_Condensed-Bold.woff") format("woff");
+  src: url("fonts/OpenSans-Bold.woff") format("woff");
   font-display: swap;
 }
 
